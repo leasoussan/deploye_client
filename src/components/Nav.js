@@ -10,7 +10,7 @@ const Nav = (props) => {
 
   const logout = async() => {
     try {
-      const response = await axios.delete(process.env.REACT_APP_SERVER_URL+'/logout',,{
+      const response = await axios.delete(process.env.REACT_APP_SERVER_URL+'/logout',{
         headers:{
           'x-access-token':token
         }
