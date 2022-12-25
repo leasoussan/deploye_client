@@ -7,7 +7,7 @@ const Users = (props) => {
   const navigate = useNavigate()
 
   useEffect(()=>{
-    fetch(process.env.REACT_APP_SERVER_URL+'/users',{
+    fetch('/users',{
       headers:{
         'x-access-token':token
       }

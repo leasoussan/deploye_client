@@ -18,7 +18,7 @@ const LoginRegisterForm = (props) => {
   const handleClick = async () => {
     if(props.title === 'Login'){
       try {
-        const response = await axios.post(process.env.REACT_APP_SERVER_URL+'/login',{
+        const response = await axios.post('/login',{
           email, password
         },{
           headers:{
@@ -35,7 +35,7 @@ const LoginRegisterForm = (props) => {
     }
     else{
       try {
-        const response = await axios.post(process.env.REACT_APP_SERVER_URL+'/register',{
+        const response = await axios.post('/register',{
           email, password
         },{
           headers:{
